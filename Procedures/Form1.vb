@@ -2,6 +2,8 @@
 
 Public Class Form1
     Dim connection As MySqlConnection
+    Dim Command As MySqlCommand
+    Dim Reader As MySqlDataReader
 
     Private Sub btnLogin_Click(sender As System.Object, e As System.EventArgs) Handles btnLogin.Click
         Dim User As String
@@ -62,7 +64,7 @@ Public Class Form1
 
     Private Sub BtnDatabase_Click(sender As System.Object, e As System.EventArgs) Handles BtnDatabase.Click
         connection = New MySqlConnection
-        connection.ConnectionString = "server=localhost;userid=root;password=wamtu;database=Visual"
+        connection.ConnectionString = "server=localhost;userid=root;password=wamatu;database=Visual"
 
         Try
             connection.Open()
@@ -73,4 +75,57 @@ Public Class Form1
             connection.Close()
         End Try
     End Sub
+
+    Function GetDatabaseConnection() As Boolean
+        ' Defines Connection to the database
+        Dim Conn As Boolean
+        connection = New MySqlConnection
+        connection.ConnectionString = "server=localhost;userid=root;password=wamatu;database=Visual"
+        Try
+            connection.Open()
+            Conn = True
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            Conn = False
+        Finally
+            connection.Close()
+        End Try
+        Return Conn
+    End Function
+
+    Function CloseConnection() As Boolean
+        Dim Conn As Boolean
+        Try
+            connection.Close()
+            Conn = True
+        Catch ex As Exception
+            Conn = False
+            MessageBox.Show(ex.Message)
+        End Try
+        Return Conn
+    End Function
+
+    Private Sub BtnLoginDb_Click(sender As System.Object, e As System.EventArgs) Handles BtnLoginDb.Click
+        Try
+            GetDatabaseConnection()
+            Command = New MySqlCommand
+            Dim Query As String
+            Query = "select * from Visual.Users where username = '" & TxtUsername.Text & "' AND password = '" & TxtPassword.Text & "'  "
+            Command = New MySqlCommand(Query, connection)
+            Dim Reader As MySqlDataReader
+            Reader = Command.ExecuteReader
+
+            Dim Counter As Integer
+            Counter = 0
+            While Reader.Read
+                Counter = Counter + 1
+            End While
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            CloseConnection()
+        End Try
+    End Sub
+
+
 End Class
