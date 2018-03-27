@@ -36,18 +36,18 @@ Partial Class Loops
         '
         'BtnPopulate
         '
-        Me.BtnPopulate.Location = New System.Drawing.Point(56, 254)
+        Me.BtnPopulate.Location = New System.Drawing.Point(56, 240)
         Me.BtnPopulate.Name = "BtnPopulate"
-        Me.BtnPopulate.Size = New System.Drawing.Size(131, 23)
+        Me.BtnPopulate.Size = New System.Drawing.Size(108, 23)
         Me.BtnPopulate.TabIndex = 1
-        Me.BtnPopulate.Text = "Button1"
+        Me.BtnPopulate.Text = "Populate"
         Me.BtnPopulate.UseVisualStyleBackColor = True
         '
         'Loops
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(335, 289)
+        Me.ClientSize = New System.Drawing.Size(767, 284)
         Me.Controls.Add(Me.BtnPopulate)
         Me.Controls.Add(Me.LstOutput)
         Me.Name = "Loops"
