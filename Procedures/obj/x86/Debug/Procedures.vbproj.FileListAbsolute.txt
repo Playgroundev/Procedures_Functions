@@ -1,0 +1,12 @@
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\bin\Debug\Procedures.exe
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\bin\Debug\Procedures.pdb
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\bin\Debug\Procedures.xml
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\obj\x86\Debug\Procedures.Form1.resources
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\obj\x86\Debug\Procedures.Resources.resources
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\obj\x86\Debug\Procedures.vbproj.GenerateResource.Cache
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\obj\x86\Debug\Procedures.exe
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\obj\x86\Debug\Procedures.xml
+C:\Users\USER\AppData\Local\Temporary Projects\Procedures\obj\x86\Debug\Procedures.pdb
+C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.exe
+C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.xml
+C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.pdb
