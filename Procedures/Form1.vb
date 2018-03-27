@@ -62,7 +62,7 @@ Public Class Form1
 
     Private Sub BtnDatabase_Click(sender As System.Object, e As System.EventArgs) Handles BtnDatabase.Click
         connection = New MySqlConnection
-        connection.ConnectionString = "server=localhost;userid=root;password=wamatu;database=Visual"
+        connection.ConnectionString = "server=localhost;userid=root;password=wamtu;database=Visual"
 
         Try
             connection.Open()
