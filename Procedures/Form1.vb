@@ -118,6 +118,7 @@ Public Class Form1
             Counter = 0
             While Reader.Read
                 Counter = Counter + 1
+                'Implementation of A Loop' 'Hoyee'
             End While
 
             If Counter = 1 Then
