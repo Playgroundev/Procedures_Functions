@@ -28,6 +28,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
+        Me.BtnFunction = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TxtUsername
@@ -81,11 +82,21 @@ Partial Class Form1
         Me.BtnExit.Text = "Exit"
         Me.BtnExit.UseVisualStyleBackColor = True
         '
+        'BtnFunction
+        '
+        Me.BtnFunction.Location = New System.Drawing.Point(136, 177)
+        Me.BtnFunction.Name = "BtnFunction"
+        Me.BtnFunction.Size = New System.Drawing.Size(86, 23)
+        Me.BtnFunction.TabIndex = 6
+        Me.BtnFunction.Text = "Functions"
+        Me.BtnFunction.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(350, 261)
+        Me.Controls.Add(Me.BtnFunction)
         Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.Label2)
@@ -104,5 +115,6 @@ Partial Class Form1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnLogin As System.Windows.Forms.Button
     Friend WithEvents BtnExit As System.Windows.Forms.Button
+    Friend WithEvents BtnFunction As System.Windows.Forms.Button
 
 End Class
