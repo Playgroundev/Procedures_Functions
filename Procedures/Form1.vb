@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Form1
+    Dim connection As MySqlConnection
 
     Private Sub btnLogin_Click(sender As System.Object, e As System.EventArgs) Handles btnLogin.Click
         Dim User As String
@@ -32,10 +35,8 @@
     Function GetCredentials(ByVal Username As String, ByVal Password As String) As String
         Dim Result As String
         If Username = "admin" And Password = "admin" Then
-            MsgBox("Correct Credentials")
             Result = "true"
         Else
-            MsgBox("Incorrect Credentials")
             TxtUsername.Text = ""
             TxtPassword.Text = ""
             Result = "false"
@@ -57,5 +58,19 @@
             Return
         End If
 
+    End Sub
+
+    Private Sub BtnDatabase_Click(sender As System.Object, e As System.EventArgs) Handles BtnDatabase.Click
+        connection = New MySqlConnection
+        connection.ConnectionString = "server=localhost;userid=root;password=wamatu;database=Visual"
+
+        Try
+            connection.Open()
+            MessageBox.Show("Connection Succcessful")
+        Catch ex As MySqlException
+            MessageBox.Show(ex.Message)
+        Finally
+            connection.Close()
+        End Try
     End Sub
 End Class

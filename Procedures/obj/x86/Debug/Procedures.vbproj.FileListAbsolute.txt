@@ -16,3 +16,6 @@ C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\bin\De
 C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.Form1.resources
 C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.Resources.resources
 C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.vbproj.GenerateResource.Cache
+C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\bin\Debug\mysql.data.dll
+C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.vbprojResolveAssemblyReference.cache
+C:\Users\USER\documents\visual studio 2010\Projects\Procedures\Procedures\obj\x86\Debug\Procedures.Loops.resources

@@ -29,6 +29,7 @@ Partial Class Form1
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
         Me.BtnFunction = New System.Windows.Forms.Button()
+        Me.BtnDatabase = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TxtUsername
@@ -84,18 +85,28 @@ Partial Class Form1
         '
         'BtnFunction
         '
-        Me.BtnFunction.Location = New System.Drawing.Point(136, 177)
+        Me.BtnFunction.Location = New System.Drawing.Point(58, 187)
         Me.BtnFunction.Name = "BtnFunction"
-        Me.BtnFunction.Size = New System.Drawing.Size(86, 23)
+        Me.BtnFunction.Size = New System.Drawing.Size(119, 23)
         Me.BtnFunction.TabIndex = 6
         Me.BtnFunction.Text = "Functions"
         Me.BtnFunction.UseVisualStyleBackColor = True
+        '
+        'BtnDatabase
+        '
+        Me.BtnDatabase.Location = New System.Drawing.Point(183, 187)
+        Me.BtnDatabase.Name = "BtnDatabase"
+        Me.BtnDatabase.Size = New System.Drawing.Size(119, 23)
+        Me.BtnDatabase.TabIndex = 7
+        Me.BtnDatabase.Text = "Database"
+        Me.BtnDatabase.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(350, 261)
+        Me.Controls.Add(Me.BtnDatabase)
         Me.Controls.Add(Me.BtnFunction)
         Me.Controls.Add(Me.BtnExit)
         Me.Controls.Add(Me.btnLogin)
@@ -116,5 +127,6 @@ Partial Class Form1
     Friend WithEvents btnLogin As System.Windows.Forms.Button
     Friend WithEvents BtnExit As System.Windows.Forms.Button
     Friend WithEvents BtnFunction As System.Windows.Forms.Button
+    Friend WithEvents BtnDatabase As System.Windows.Forms.Button
 
 End Class
