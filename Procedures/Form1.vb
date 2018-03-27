@@ -88,7 +88,7 @@ Public Class Form1
             MessageBox.Show(ex.Message)
             Conn = False
         Finally
-            connection.Close()
+            'Connection.Close()
         End Try
         Return Conn
     End Function
@@ -114,18 +114,25 @@ Public Class Form1
             Command = New MySqlCommand(Query, connection)
             Dim Reader As MySqlDataReader
             Reader = Command.ExecuteReader
-
             Dim Counter As Integer
             Counter = 0
             While Reader.Read
                 Counter = Counter + 1
             End While
+
+            If Counter = 1 Then
+                MessageBox.Show("Correct Credentials")
+                Me.Hide()
+                Loops.Show()
+            ElseIf Counter > 1 Then
+                MessageBox.Show("Duplicate Credentials")
+            Else
+                MessageBox.Show("Incorrect Credentials")
+            End If
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
             CloseConnection()
         End Try
     End Sub
-
-
 End Class
