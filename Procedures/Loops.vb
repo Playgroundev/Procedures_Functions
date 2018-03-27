@@ -17,4 +17,13 @@
         End Try
        
     End Sub
+
+    Private Sub BtnWhile_Click(sender As System.Object, e As System.EventArgs) Handles BtnWhile.Click
+        Dim Number As Integer
+        Do While Number <= 100
+            LstWhile.Items.Add(Number)
+            Number += 1
+        Loop
+
+    End Sub
 End Class
